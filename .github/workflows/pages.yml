@@ -26,8 +26,11 @@ jobs:
           hugo-version: '0.147.8'
 
       - name: Build with Hugo
-        run: hugo --minify
-
+        run: |
+          hugo \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
