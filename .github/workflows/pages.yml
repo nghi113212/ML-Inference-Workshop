@@ -27,13 +27,13 @@ jobs:
 
       - name: Configure Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Build with Hugo
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}"
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
             
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
