@@ -55,14 +55,14 @@ Sau khi hoàn thành workshop này, bạn sẽ:
 
 
 ## Nội dung
-- [1. Introduction](/1-Introduce/)
-- [2. Preparation](/2-Prerequiste/)
-- [3. Build model](/3-Build-model)
+- [1. Giới thiệu](/1-Introduce/)
+- [2. Các bước chuẩn bị](/2-Prerequiste/)
+- [3. Xây dựng model](/3-Build-model)
 - [4. VPC](/4-VPC)
 - [5. ElastiCache](/5-Elastic-Cache)
 - [6. ECR](/6-ECR)
 - [7. Lambda](/7-Lambda)
 - [8. API Gateway](/8-API-Gateway)
-- [9. Testing](/9-Testing)
-- [10. Monitoring and Pricing](/10-Monitoring)
-- [11. Clean up](/11-Clean-up)
+- [9. Kiểm thử](/9-Testing)
+- [10. Giám sát và chi phí](/10-Monitoring)
+- [11. Dọn dẹp tài nguyên](/11-Clean-up)
