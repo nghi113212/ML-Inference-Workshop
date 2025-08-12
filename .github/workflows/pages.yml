@@ -26,13 +26,14 @@ jobs:
           hugo-version: '0.147.8'
 
       - name: Configure Pages
-        uses: actions/configure-pages@v5
+        id: pages
+        uses: actions/configure-pages@v4
 
       - name: Build with Hugo
         run: |
           hugo \
             --minify \
-            --baseURL "https://nghi113212.github.io/ML-Inference-Workshop/"
+            --baseURL "${{ steps.pages.outputs.base_url }}"
             
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
